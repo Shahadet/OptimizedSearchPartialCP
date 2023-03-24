@@ -1,0 +1,34 @@
+//Example of the paper
+//Result is DT 1 1 1 , 3 3 2
+//Hard Constraints are incompatible tuples, One way directed(if A,B then no B,A)
+
+variables = ABC
+parent = ,A,AB
+domains = 4
+hard_constraints = 3
+A,B:1 3, 2 1, 2 3, 1 4, 2 4, 4 4
+A,C:3 1, 3 3, 1 4, 2 4, 3 4, 4 4
+B,C:2 2, 4 2
+
+cp_net = 
+A,A: 1>2, 3>2, 1>4, 3>4
+a1,B:1>2, 3>2
+a2,B:1>2, 2>3, 1>3
+a3,B:2>1, 3>1
+a4,B:2>1, 3>1
+a1,b1,C:1>2, 1>3
+a1,b2,C:1>2, 1>3
+a1,b3,C:1>2, 1>3
+a1,b4,C:1>2, 1>3
+a2,b1,C:1>2, 1>3
+a2,b2,C:1>2, 1>3
+a2,b3,C:1>2, 1>3
+a2,b4,C:1>2, 1>3
+a3,b1,C: 3>1, 2>1
+a3,b2,C: 3>1, 2>1
+a3,b3,C: 3>1, 2>1
+a3,b4,C: 3>1, 2>1
+a4,b1,C: 3>1, 2>1
+a4,b2,C: 3>1, 2>1
+a4,b3,C: 3>1, 2>1
+a4,b4,C: 3>1, 2>1

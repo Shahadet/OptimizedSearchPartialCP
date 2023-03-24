@@ -1,0 +1,29 @@
+#=========== INPUTS ========================#
+#number of variables(n) = 3
+#p = 0.25
+#alpha = 0.6
+#r = 0.3
+#order or partialness(o) = 0.5
+#maximum number of parents = 5
+#fixParents = true
+#------- Computation for generator-----
+#domain size (n^alpha) = 2
+#Number Of Constraints(r nlogn) =1
+#Number of Incompatible Tuples(p d^2)=1
+#Number of Preference order(d(d-1)/2) =1
+#Phase transition [1 - e^{-a/r}] :0.8646647167633873
+#=========== OUTPUTS ========================#
+variables = ABC
+parent = ,A,AB
+domains = 2
+hard_constraints = 1
+A,B:1 1
+
+cp_net = 
+A,A:2>1
+a1,B:1>2
+a2,B:1>2
+a1,b1,C:1>2
+a2,b1,C:1>2
+a1,b2,C:2>1
+a2,b2,C:1>2

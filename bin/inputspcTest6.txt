@@ -1,0 +1,20 @@
+variables = ABCD
+
+     parent = ,A,B,AB
+
+     domains = 2
+
+     hard_constraints = 1
+     A,D: 1 1
+
+     cp_net = 
+
+         A,A: 
+         a1,B: 
+         a2,B: 
+         a1,b1,D: 
+         a1,b2,D: 
+         a2,b1,D: 
+         a2,b2,D:
+         b1,C: 
+         b2,C:
